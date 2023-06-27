@@ -1,0 +1,487 @@
+@import "mixin";
+
+.main {
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .box-imc {
+            width: 45%;
+            background-color: #36b1df;
+            padding: 2.5rem;
+            border-radius: 0.5rem;
+            position: relative;
+            .imc {
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                position: relative;
+                label {
+                    font-size: 3.6rem;
+                    font-weight: 500;
+                    color: #000000;
+                    margin-bottom: 1rem;
+                    margin-left: 5px;
+                }
+                input {
+                    height: 7.9rem;
+                    width: 100%;
+                    border: 1px solid #000000;
+                    border-radius: 0.5rem;
+                    margin-bottom: 3.3rem;
+                    padding-left: 1.9rem;
+                    font-size: 3.6rem;
+                    &::placeholder {
+                        color: #d0d0d0;
+                        font-size: 3.6rem;
+                        font-weight: 700;
+                    }
+                }
+                p {
+                    font-size: 3.6rem;
+                    font-weight: 400;
+                    color: #000000;
+                    margin-bottom: 3.5rem;
+                }
+                .btn {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    button {
+                        width: 100%;
+                        height: 7.9rem;
+                        border-radius: 0.5rem;
+                        background-color: black;
+                        font-size: 3.6rem;
+                        color: #ffffff;
+                        &:hover {
+                            background-color: rgb(7, 141, 185);
+                        }
+                        &:active {
+                            opacity: 0.9;
+                        }
+                    }
+                }
+                .img2 {
+                    position: absolute;
+                    top: 7%;
+                    right: -20%;
+                    height: 35rem;
+                }
+            }
+        }
+    }
+    @include responsivo(1100px) {
+        .flex {
+            .img1,
+            .img3 {
+                width: 22rem;
+            }
+            .box-imc {
+                .imc {
+                    label {
+                        font-size: 3.2rem;
+                        height: 6rem;
+                    }
+                    input {
+                        height: 7rem;
+                        font-size: 3.2rem;
+                        &::placeholder {
+                            font-size: 3.2rem;
+                        }
+                    }
+                    p {
+                        font-size: 3rem;
+                    }
+                    .img2 {
+                        width: 19rem;
+                    }
+                }
+            }
+        }
+    }
+    @include responsivo(950px) {
+        .flex {
+            .img1,
+            .img3 {
+                width: 20rem;
+            }
+            .box-imc {
+                padding: 1rem;
+                .imc {
+                    label {
+                        font-size: 3.2rem;
+                        height: 6rem;
+                    }
+                    input {
+                        height: 7rem;
+                        font-size: 3.2rem;
+                        &::placeholder {
+                            font-size: 3.2rem;
+                        }
+                    }
+                    p {
+                        font-size: 3rem;
+                    }
+                    .img2 {
+                        width: 16rem;
+                        height: 30rem;
+                        top: 15%;
+                        right: -15%;
+                    }
+                    .btn {
+                        button {
+                            height: 6rem;
+                            font-size: 2.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsivo(900px) {
+        .flex {
+            .img1,
+            .img3 {
+                width: 17rem;
+            }
+            .box-imc {
+                padding: 1rem;
+                width: 37rem;
+                .imc {
+                    label {
+                        font-size: 2.9rem;
+                    }
+                    input {
+                        height: 5.5rem;
+                        font-size: 2.9rem;
+                        &::placeholder {
+                            font-size: 3rem;
+                        }
+                    }
+                    p {
+                        font-size: 2.5rem;
+                    }
+                    .img2 {
+                        width: 16rem;
+                        height: 30rem;
+                        top: 15%;
+                        right: -15%;
+                    }
+                    .btn {
+                        button {
+                            height: 5rem;
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsivo(800px) {
+        .flex {
+            .img1,
+            .img3 {
+                width: 13rem;
+            }
+            .box-imc {
+                padding: .5rem;
+                .imc {
+                    label {
+                        font-size: 2.9rem;
+                    }
+                    input {
+                        height: 5.5rem;
+                        font-size: 2.9rem;
+                        &::placeholder {
+                            font-size: 3rem;
+                        }
+                    }
+                    p {
+                        font-size: 2.5rem;
+                    }
+                    .img2 {
+                        width: 16rem;
+                        height: 30rem;
+                        top: 1%;
+                        right: -15%;
+                    }
+                    .btn {
+                        button {
+                            height: 5rem;
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsivo(700px) {
+        .flex {
+            display: flex;
+            justify-content: center;
+            
+            .img1,
+            .img3 {
+                display: none;
+            }
+            .box-imc {
+                padding: .5rem;
+                .imc {
+                    label {
+                        font-size: 2.9rem;
+                    }
+                    input {
+                        height: 5.5rem;
+                        font-size: 2.9rem;
+                        &::placeholder {
+                            font-size: 3rem;
+                        }
+                    }
+                    p {
+                        font-size: 2.5rem;
+                    }
+                    .img2 {
+                        width: 16rem;
+                        height: 30rem;
+                        top: 15%;
+                        right: -15%;
+                    }
+                    .btn {
+                        button {
+                            height: 5rem;
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsivo(500px) {
+        .flex {
+            display: flex;
+            justify-content: center;
+            
+            .img1,
+            .img3 {
+                display: none;
+            }
+            .box-imc {
+                padding: .5rem;
+                .imc {
+                    padding: .5rem;
+                    label {
+                        font-size: 2.6rem;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                    }
+                    input {
+                        height: 5.5rem;
+                        font-size: 2.9rem;
+                        &::placeholder {
+                            font-size: 3rem;
+                        }
+                    }
+                    p {
+                        font-size: 2.2rem;
+                    }
+                    .img2 {
+                        width: 16rem;
+                        height: 30rem;
+                        top: 9%;
+                        right: -9%;
+                    }
+                    .btn {
+                        button {
+                            height: 5rem;
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsivo(450px) {
+        .flex {
+            display: flex;
+            justify-content: center;
+            
+            .img1,
+            .img3 {
+                display: none;
+            }
+            .box-imc {
+                padding: .5rem;
+                margin: 1.5rem;
+                .imc {
+                    padding: .5rem;
+                    label {
+                        font-size: 2.6rem;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                    }
+                    input {
+                        height: 5rem;
+                        font-size: 2.5rem;
+                        &::placeholder {
+                            font-size: 2.5rem;
+                        }
+                    }
+                    p {
+                        font-size: 2.2rem;
+                    }
+                    .img2 {
+                        width: 16rem;
+                        height: 30rem;
+                        top: 9%;
+                        right: -9%;
+                    }
+                    .btn {
+                        button {
+                            height: 5rem;
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsivo(400px) {
+        .flex {
+            display: flex;
+            justify-content: center;
+            
+            .img1,
+            .img3 {
+                display: none;
+            }
+            .box-imc {
+                padding: .5rem;
+                margin: 1.5rem;
+                .imc {
+                    padding: .5rem;
+                    label {
+                        font-size: 2.6rem;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                    }
+                    input {
+                        height: 5rem;
+                        font-size: 2.1rem;
+                        &::placeholder {
+                            font-size: 2.3rem;
+                        }
+                    }
+                    p {
+                        font-size: 2rem;
+                    }
+                    .img2 {
+                        width: 13rem;
+                        height: 22rem;
+                        top: 25%;
+                        right: -9%;
+                    }
+                    .btn {
+                        button {
+                            height: 4.5rem;
+                            font-size: 2.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsivo(380px) {
+        .flex {
+            display: flex;
+            justify-content: center;
+            
+            .img1,
+            .img3 {
+                display: none;
+            }
+            .box-imc {
+                padding: .5rem;
+                margin: 1.5rem;
+                .imc {
+                    padding: .3rem;
+                    label {
+                        font-size: 2.2rem;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                    }
+                    input {
+                        height: 5rem;
+                        font-size: 2.1rem;
+                        &::placeholder {
+                            font-size: 2.3rem;
+                        }
+                    }
+                    p {
+                        font-size: 2rem;
+                    }
+                    .img2 {
+                        width: 13rem;
+                        height: 22rem;
+                        top: 25%;
+                        right: -9%;
+                    }
+                    .btn {
+                        button {
+                            height: 4.5rem;
+                            font-size: 2.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsivo(350px) {
+        .flex {
+            display: flex;
+            justify-content: center;
+            
+            .img1,
+            .img3 {
+                display: none;
+            }
+            .box-imc {
+                padding: .5rem;
+                margin: .2rem;
+                .imc {
+                    padding: .3rem;
+                    label {
+                        font-size: 2.2rem;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                    }
+                    input {
+                        height: 5rem;
+                        font-size: 2.1rem;
+                        &::placeholder {
+                            font-size: 2.3rem;
+                        }
+                    }
+                    p {
+                        font-size: 2rem;
+                    }
+                    .img2 {
+                        width: 13rem;
+                        height: 22rem;
+                        top: 25%;
+                        right: -9%;
+                        display: none;
+                    }
+                    .btn {
+                        button {
+                            height: 4.5rem;
+                            font-size: 2.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
