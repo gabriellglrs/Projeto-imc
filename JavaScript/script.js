@@ -2,20 +2,31 @@ const button = document.querySelector("#calcular");
 const imc = document.querySelector("#imc");
 
 function calcularImc(e) {
-    const peso = document.querySelector("#peso").value;
-    const altura = document.querySelector("#altura").value.replace(",", ".");
+    const inputPeso = document.querySelector("#peso")
+    const inputAltura = document.querySelector("#altura")
+
+    const peso = inputPeso.value.replace(",", ".");
+    const altura = inputAltura.value.replace(",", ".");
 
     if (peso === "" || altura === "") {
         alert("Preencha os campos necessários!");
     } else {
         const resultadoImc = peso / (altura * altura);
-        if (resultadoImc === NaN) {
-            alert("Digite somente Números!");
+
+        const verificarNaN = isNaN(resultadoImc);
+
+        if (verificarNaN === true) {
+            alert("Digite apenas Números nos campos!");
+
+            inputAltura.value = ''
+            inputPeso.value = ''
+            
+
         } else {
             const paragrafo = document.querySelector("#paragrafo");
 
             paragrafo.innerText =
-                "Seu IMC: " + resultadoImc.toFixed(2).replace(".", ",");
+                "IMC: " + resultadoImc.toFixed(2).replace(".", ",");
 
             if (resultadoImc > 40) {
                 imc.innerText = "Situação: Obesidade III (mórbida)";

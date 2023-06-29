@@ -45,6 +45,14 @@
                     color: #000000;
                     margin-bottom: 3.5rem;
                 }
+                .div-resultado {
+                    text-align: center;
+                    
+                    p{
+                        font-weight: bold
+                    }
+
+                }
                 .btn {
                     display: flex;
                     width: 100%;
@@ -187,7 +195,7 @@
                 width: 13rem;
             }
             .box-imc {
-                padding: .5rem;
+                padding: 0.5rem;
                 .imc {
                     label {
                         font-size: 2.9rem;
@@ -222,13 +230,13 @@
         .flex {
             display: flex;
             justify-content: center;
-            
+
             .img1,
             .img3 {
                 display: none;
             }
             .box-imc {
-                padding: .5rem;
+                padding: 0.5rem;
                 .imc {
                     label {
                         font-size: 2.9rem;
@@ -263,15 +271,15 @@
         .flex {
             display: flex;
             justify-content: center;
-            
+
             .img1,
             .img3 {
                 display: none;
             }
             .box-imc {
-                padding: .5rem;
+                padding: 0.5rem;
                 .imc {
-                    padding: .5rem;
+                    padding: 0.5rem;
                     label {
                         font-size: 2.6rem;
                         margin-bottom: 0;
@@ -307,16 +315,16 @@
         .flex {
             display: flex;
             justify-content: center;
-            
+
             .img1,
             .img3 {
                 display: none;
             }
             .box-imc {
-                padding: .5rem;
+                padding: 0.5rem;
                 margin: 1.5rem;
                 .imc {
-                    padding: .5rem;
+                    padding: 0.5rem;
                     label {
                         font-size: 2.6rem;
                         margin-bottom: 0;
@@ -352,16 +360,16 @@
         .flex {
             display: flex;
             justify-content: center;
-            
+
             .img1,
             .img3 {
                 display: none;
             }
             .box-imc {
-                padding: .5rem;
+                padding: 0.5rem;
                 margin: 1.5rem;
                 .imc {
-                    padding: .5rem;
+                    padding: 0.5rem;
                     label {
                         font-size: 2.6rem;
                         margin-bottom: 0;
@@ -397,16 +405,16 @@
         .flex {
             display: flex;
             justify-content: center;
-            
+
             .img1,
             .img3 {
                 display: none;
             }
             .box-imc {
-                padding: .5rem;
+                padding: 0.5rem;
                 margin: 1.5rem;
                 .imc {
-                    padding: .3rem;
+                    padding: 0.3rem;
                     label {
                         font-size: 2.2rem;
                         margin-bottom: 0;
@@ -442,16 +450,16 @@
         .flex {
             display: flex;
             justify-content: center;
-            
+
             .img1,
             .img3 {
                 display: none;
             }
             .box-imc {
-                padding: .5rem;
-                margin: .2rem;
+                padding: 0.5rem;
+                margin: 0.2rem;
                 .imc {
-                    padding: .3rem;
+                    padding: 0.3rem;
                     label {
                         font-size: 2.2rem;
                         margin-bottom: 0;

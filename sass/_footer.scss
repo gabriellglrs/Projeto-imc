@@ -4,7 +4,6 @@
     width: 100%;
     height: 9.4rem;
     background-color: #36b1df;
-
     .box {
         display: flex;
         flex-direction: column;
@@ -34,8 +33,8 @@
     @include responsivo(500px) {
         height: 6.6rem;
         margin-top: 4rem;
-        .box{ 
-            .box-footer{
+        .box {
+            .box-footer {
                 justify-content: center;
                 gap: 2rem;
                 flex-direction: row;
