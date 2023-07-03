@@ -1,16 +1,24 @@
 const button = document.querySelector("#calcular");
+
+
+
+
 const imc = document.querySelector("#imc");
 
 function calcularImc(e) {
+
     const inputPeso = document.querySelector("#peso")
     const inputAltura = document.querySelector("#altura")
 
-    const peso = inputPeso.value.replace(",", ".");
-    const altura = inputAltura.value.replace(",", ".");
+    if (inputPeso.value === "" || inputAltura.value === "") {
 
-    if (peso === "" || altura === "") {
-        alert("Preencha os campos necessários!");
+        alert('Preencha os espaços em branco!')
+        
     } else {
+
+        const peso = inputPeso.value.replace(",", ".");
+        const altura = inputAltura.value.replace(",", ".");
+    
         const resultadoImc = peso / (altura * altura);
 
         const verificarNaN = isNaN(resultadoImc);
